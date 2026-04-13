@@ -12,7 +12,6 @@ class ListNode {
 
 class Solution {
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
-        // Dummy node to simplify
         ListNode dummy = new ListNode(-1);
         ListNode current = dummy;
 
@@ -26,8 +25,6 @@ class Solution {
             }
             current = current.next;
         }
-
-        // Attach remaining nodes
         if (list1 != null) {
             current.next = list1;
         } else {
