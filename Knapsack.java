@@ -1,4 +1,6 @@
-
+import java.io.*;
+import java.util.*;
+import java.util.Scanner;
 public class Knapsack {
 
     static int knapsack(int wt[], int val[], int n, int W) {
