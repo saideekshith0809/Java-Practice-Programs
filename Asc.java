@@ -1,5 +1,3 @@
-import java.util.Scanner;
-import java.util.Arrays;
 
 class Asc {
     public static void main(String args[]) {
