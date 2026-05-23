@@ -12,7 +12,7 @@ class Asc {
 
         System.out.println("Enter the names:");
         for (int i = 0; i < n; i++) {
-            str[i] = sc.nextLine(); // allows full names with spaces
+            str[i] = sc.nextLine(); 
         }
 
         // Sorting in ascending order
