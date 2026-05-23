@@ -14,8 +14,6 @@ class Asc {
         for (int i = 0; i < n; i++) {
             str[i] = sc.nextLine(); 
         }
-
-        // Sorting in ascending order
         Arrays.sort(str);
 
         System.out.println("The sorted names are:");
