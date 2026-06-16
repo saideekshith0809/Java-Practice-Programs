@@ -17,7 +17,6 @@ class Solution {
             swap(nums, i, j);
         }
 
-        // Step 3: Reverse the suffix
         reverse(nums, i + 1, n - 1);
     }
 
