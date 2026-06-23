@@ -15,7 +15,6 @@ class Solution {
                 currentEnd = farthest;
             }
         }
-
         return jumps;
     }
 }
