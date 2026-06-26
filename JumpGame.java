@@ -1,4 +1,5 @@
 import java.io.*;
+import java.util.*;
 class Solution {
     public boolean canJump(int[] nums) {
         int maxReach = 0;
