@@ -12,8 +12,8 @@ class Solution {
         }
 
         boolean[] cols = new boolean[n];
-        boolean[] diag1 = new boolean[2 * n]; // row - col + n
-        boolean[] diag2 = new boolean[2 * n]; // row + col
+        boolean[] diag1 = new boolean[2 * n]; 
+        boolean[] diag2 = new boolean[2 * n]; 
 
         backtrack(0, board, result, cols, diag1, diag2, n);
 
