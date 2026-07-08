@@ -14,7 +14,6 @@ public class Main {
             }
             
             int maxHeight = 0;
-            // Try planting on each possible day (0-indexed: 0 to N-2)
             for (int i = 0; i < N - 1; i++) {
                 int height = Math.min(A[i], A[i + 1]);
                 maxHeight = Math.max(maxHeight, height);
