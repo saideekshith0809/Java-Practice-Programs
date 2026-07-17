@@ -1,6 +1,6 @@
 import java.util.Stack;
 import java.io.*;
-
+import java.util.Scanner;
 class Solution {
     public boolean isValid(String s) {
         Stack<Character> stack = new Stack<>();
