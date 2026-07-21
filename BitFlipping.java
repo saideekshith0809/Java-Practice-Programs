@@ -3,17 +3,17 @@ import java.util.*;
 import java.util.Scanner;
 public class Solution {
     public int solve(int A) {
-        String binary = Integer.toBinaryString(A);
-        String flipped = "";
+        int ans = 0;
+        int place = 1;
 
-        for (int i = 0; i < binary.length(); i++) {
-            if (binary.charAt(i) == '0') {
-                flipped += '1';
-            } else {
-                flipped += '0';
+        while (A > 0) {
+            if ((A & 1) == 0) {
+                ans += place;
             }
+            place <<= 1;
+            A >>= 1;
         }
 
-        return Integer.parseInt(flipped, 2);
+        return ans;
     }
 }
