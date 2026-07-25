@@ -1,3 +1,5 @@
+import java.util.*;
+import java.util.Scanner;
 class Solution {
     public int singleNumber(int[] nums) {
         int ans=0;
