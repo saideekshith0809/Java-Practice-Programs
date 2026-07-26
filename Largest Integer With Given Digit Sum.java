@@ -1,3 +1,5 @@
+import java.util.*;
+import java.util.Scanner;
 class Solution {
     public int largestInteger(int n, int s) {
         if (s == 0) return 0;
