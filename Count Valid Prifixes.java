@@ -1,3 +1,5 @@
+import java.util.*;
+import java.util.Scanner;
 class Solution {
     public int countValidPrefixes(String s) {
         int zeros = 0, ones = 0;
