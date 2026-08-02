@@ -16,8 +16,6 @@ class Solution {
         for (int count : freq.values()) {
             ans = Math.max(ans, count);
         }
-
-        // Store all pairs by their sum
         for (int i = 0; i < n; i++) {
             for (int j = i + 1; j < n; j++) {
                 int sum = planks[i] + planks[j];
@@ -31,19 +29,14 @@ class Solution {
 
             boolean[] used = new boolean[n];
             int width = freq.getOrDefault(target, 0);
-
-            // Reserve all planks already equal to target
             for (int i = 0; i < n; i++) {
                 if (planks[i] == target) {
                     used[i] = true;
                 }
             }
-
-            // Greedily take disjoint pairs
             for (int[] pair : entry.getValue()) {
                 int a = pair[0];
                 int b = pair[1];
-
                 if (!used[a] && !used[b]) {
                     used[a] = true;
                     used[b] = true;
